@@ -1,120 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Anusaya Beura | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anusaya Beura | Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: linear-gradient(to right, #667eea, #764ba2);
-      color: white;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    header {
-      text-align: center;
-      padding: 40px;
-      animation: fadeIn 2s;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: white;
+}
 
-    header h1 {
-      font-size: 40px;
-    }
+/* Header */
+header {
+  text-align: center;
+  padding: 60px 20px;
+}
 
-    section {
-      background: white;
-      color: black;
-      margin: 20px;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      animation: slideUp 1.5s;
-    }
+header h1 span {
+  color: #38bdf8;
+}
 
-    img {
-      width: 150px;
-      border-radius: 50%;
-      display: block;
-      margin: auto;
-    }
+/* Sections */
+.section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
 
-    h2 {
-      color: #764ba2;
-    }
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
 
-    footer {
-      text-align: center;
-      padding: 15px;
-    }
+.card:hover {
+  transform: scale(1.03);
+  background: #334155;
+}
 
-    button {
-      background: #ff7eb3;
-      border: none;
-      padding: 10px 20px;
-      color: white;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+/* Skills */
+.skills span {
+  display: inline-block;
+  background: #38bdf8;
+  color: black;
+  padding: 6px 10px;
+  margin: 5px;
+  border-radius: 6px;
+}
 
-    button:hover {
-      background: #ff4f81;
-      transform: scale(1.1);
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-
-    @keyframes slideUp {
-      from {transform: translateY(50px); opacity: 0;}
-      to {transform: translateY(0); opacity: 1;}
-    }
-  </style>
-
+/* Animation */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Anusaya Beura</h1>
-  <p>Assistant Engineer | IT Department</p>
+  <h1>Hello, I'm <span>Anusaya Beura</span></h1>
+  <p>Assistant Engineer | IT Department | ERP & SAP Specialist</p>
 </header>
 
-<section>
-  <img src="https://via.placeholder.com/150" alt="My Photo">
-
-  <h2>About Me</h2>
-  <p>
-    I am a B.Tech Computer Science 4th year student working at Aarati Steels Limited.
-    I have experience in ERP, SAP SD, and system implementation.
-  </p>
+<section class="section fade">
+  <h2>👨‍💻 About Me</h2>
+  <div class="card">
+    <p>
+      I am a B.Tech 4th year Computer Science student currently working at Aarati Steels Limited, Athgarh as an Assistant Engineer in IT Department.  
+      I have strong experience in ERP systems and SAP SD module. I actively participate in UAT and support system implementation.
+    </p>
+  </div>
 </section>
 
-<section>
-  <h2>Skills</h2>
-  <ul>
-    <li>ERP Software</li>
-    <li>SAP SD Module</li>
-    <li>UAT Testing</li>
-    <li>Python</li>
-  </ul>
+<section class="section fade">
+  <h2>🎓 Education</h2>
+  <div class="card">
+    <p>B.Tech in Computer Science (4th Year)</p>
+    <p>Diploma in Computer Science – Dhabaleswar Institute of Technology</p>
+    <p>Schooling – Govt Girls High School, Athgarh</p>
+  </div>
 </section>
 
-<section>
-  <h2>Experience</h2>
-  <p>5 Years PGDCA Computer Teacher</p>
+<section class="section fade">
+  <h2>💼 Experience</h2>
+  <div class="card">
+    <p>Assistant Engineer – IT Department (Aarati Steels Limited)</p>
+    <p>5 Years Experience as PGDCA Computer Teacher</p>
+  </div>
 </section>
 
-<section>
-  <h2>Contact</h2>
-  <button onclick="alert('Thank you for visiting!')">Click Me</button>
+<section class="section fade">
+  <h2>🧠 Skills</h2>
+  <div class="card skills">
+    <span>ERP Software</span>
+    <span>SAP SD</span>
+    <span>SAP PM</span>
+    <span>UAT Testing</span>
+    <span>Python</span>
+    <span>Computer Teaching</span>
+  </div>
 </section>
 
-<footer>
-  <p>© 2026 Anusaya Beura</p>
-</footer>
+<section class="section fade">
+  <h2>📜 Certifications</h2>
+  <div class="card">
+    <p>Python Course – Coursera</p>
+    <p>SAP SD Module – Udemy</p>
+    <p>OSCIT Course Completed</p>
+  </div>
+</section>
+
+<section class="section fade">
+  <h2>📞 Contact</h2>
+  <div class="card">
+    <p>Email: your-email@example.com</p>
+  </div>
+</section>
+
+<script>
+const faders = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+  faders.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+});
+</script>
 
 </body>
 </html>
